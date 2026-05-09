@@ -3,30 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal Multimídia</title>
+    <title>Meu Portal de Entretenimento Digital</title>
     
-    <!-- 1. CSS RESET (Eric Meyer) - Carregado antes de tudo -->
+    <!-- 1. Vínculo do CSS Reset (Eric Meyer) -->
     <link rel="stylesheet" href="reset.css">
     
-    <!-- 2. CSS EXTERNO -->
+    <!-- 2. Vínculo do CSS Externo Principal -->
     <link rel="stylesheet" href="estilo.css">
 
-    <!-- 3. CSS INTERNO -->
+    <!-- 3. CSS INTERNO: Estilizações específicas de destaque -->
     <style>
         .container {
             max-width: 1200px;
             margin: 0 auto;
+            padding: 20px;
         }
         
-        /* Estilizando as tags h3 internamente */
-        h3 {
-            color: #ffffff;
-            margin-top: 15px;
-            font-size: 1.3rem;
+        .item-box {
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid #333;
         }
 
-        .item-box {
-            margin-bottom: 40px;
+        .obra-titulo {
+            font-weight: bold;
+            color: #ffffff;
+            font-size: 1.1rem;
+            margin: 10px 0;
+            display: block;
         }
     </style>
 </head>
@@ -34,86 +38,84 @@
 
     <div class="container">
         
-        <!-- USO DE ID E CSS INLINE -->
-        <header id="header-portal" style="border: 2px solid #22d3ee;">
-            <h1 style="font-size: 2.5rem; color: #22d3ee;">MEU PORTAL DIGITAL</h1>
-            <p style="color: #94a3b8; margin-top: 10px;">Explorando entretenimento e tecnologia</p>
+        <!-- HEADER COM CSS INLINE: Requisito técnico de implementação -->
+        <header id="main-header" style="background: linear-gradient(to right, #00c6ff, #0072ff); padding: 40px; text-align: center; border-radius: 15px; margin-bottom: 30px;">
+            <h1 style="font-size: 3rem; color: white; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+                Meu Portal de Entretenimento Digital
+            </h1>
         </header>
 
-        <!-- FLEXBOX CONTAINER -->
-        <main class="flex-container">
+        <!-- LAYOUT FLEXBOX: Organiza as 3 seções lado a lado -->
+        <main class="flex-layout">
 
             <!-- SEÇÃO 1: FILMES E SÉRIES -->
-            <section class="sessao">
-                <h2 class="titulo-sessao">Filmes e Séries</h2>
+            <section class="section-card">
+                <h2 class="section-title">Filmes e Séries</h2>
+                <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1000" alt="Cinema" class="featured-image">
                 
                 <div class="item-box">
-                    <img src="https://images.tcdn.com.br/img/img_prod/1129410/poster_cartaz_crepusculo_a_104443_1_864e43f114172f38a531636c0a0c4731.jpg" class="img-card">
-                    <span class="legenda-imagem">Filme: Crepúsculo</span>
-                    <h3>Crepúsculo</h3>
-                    <ul class="lista-enredo">
-                        <li>Bella se muda para Forks e descobre o mundo sobrenatural.</li>
-                        <li>O romance entre uma humana e o vampiro Edward Cullen.</li>
+                    <img src="https://images.tcdn.com.br/img/img_prod/1129410/poster_cartaz_crepusculo_a_104443_1_864e43f114172f38a531636c0a0c4731.jpg" alt="Crepúsculo" class="thumb-image">
+                    <span class="obra-titulo">Crepúsculo:</span>
+                    <ul class="info-list">
+                        <li>Bella Swan se muda para Forks e conhece o misterioso Edward Cullen.</li>
+                        <li>A descoberta de que Edward é um vampiro muda sua vida para sempre.</li>
                     </ul>
                 </div>
 
                 <div class="item-box">
-                    <img src="https://br.web.img3.acsta.net/pictures/16/01/14/19/33/178550.jpg" class="img-card">
-                    <span class="legenda-imagem">Filme: Zootopia</span>
-                    <h3>Zootopia</h3>
-                    <ul class="lista-enredo">
-                        <li>Uma coelha policial e uma raposa trapaceira trabalham juntos.</li>
-                        <li>Uma cidade onde presas e predadores convivem.</li>
+                    <img src="https://br.web.img2.acsta.net/medias/nmedia/18/89/43/82/20052140.jpg" alt="Velozes" class="thumb-image">
+                    <span class="obra-titulo">Velozes e Furiosos:</span>
+                    <ul class="info-list">
+                        <li>Dominic Toretto e Brian O'Conner em um mundo de corridas ilegais.</li>
+                        <li>Foca na lealdade, adrenalina e o conceito de família.</li>
                     </ul>
                 </div>
             </section>
 
-            <!-- SEÇÃO 2: MÚSICA E PODCAST -->
-            <section class="sessao">
-                <h2 class="titulo-sessao">Música e Podcast</h2>
-                
+            <!-- SEÇÃO 2: MÚSICA E PODCASTS -->
+            <section class="section-card">
+                <h2 class="section-title">Música e Podcasts</h2>
+                <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=1000" alt="DJ" class="featured-image">
+
                 <div class="item-box">
-                    <img src="https://i.scdn.co/image/ab6761610000e5eb98188cf860e65330368df77c" class="img-card">
-                    <span class="legenda-imagem">Podcast: Podpah</span>
-                    <h3>Podpah</h3>
-                    <ul class="lista-enredo">
-                        <li>Um dos maiores canais de podcast do país.</li>
-                        <li>Conversas descontraídas com convidados variados.</li>
+                    <img src="https://yt3.googleusercontent.com/ytc/AIdro_mN-uXh1pG-K5hBwOQ_1_v_5W_jYQ=s900-c-k-c0x00ffffff-no-rj" alt="Podpah" class="thumb-image">
+                    <span class="obra-titulo">Podpah:</span>
+                    <ul class="info-list">
+                        <li>O podcast líder apresentado por Igão e Mítico.</li>
+                        <li>Entrevistas icônicas com grandes nomes da cultura nacional.</li>
                     </ul>
                 </div>
 
                 <div class="item-box">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273574c8b389668d2f143717208" class="img-card">
-                    <span class="legenda-imagem">Música: Aquarela</span>
-                    <h3>Aquarela (Toquinho)</h3>
-                    <ul class="lista-enredo">
-                        <li>Uma jornada poética sobre o ciclo da vida.</li>
-                        <li>A imaginação traduzida em cores e desenhos.</li>
+                    <img src="https://i.scdn.co/image/ab67616d0000b273574c8b389668d2f143717208" alt="Aquarela" class="thumb-image">
+                    <span class="obra-titulo">Aquarela:</span>
+                    <ul class="info-list">
+                        <li>Clássico de Toquinho que poetiza o ciclo da vida.</li>
+                        <li>Uma música que estimula a imaginação e a criatividade.</li>
                     </ul>
                 </div>
             </section>
 
-            <!-- SEÇÃO 3: TECNOLOGIA -->
-            <section class="sessao">
-                <h2 class="titulo-sessao">Tecnologia</h2>
-                
+            <!-- SEÇÃO 3: GAMES E TECNOLOGIA -->
+            <section class="section-card">
+                <h2 class="section-title">Games e Tecnologia</h2>
+                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1000" alt="Setup" class="featured-image">
+
                 <div class="item-box">
-                    <img src="https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Brand-Thumb-Visual-Studio-2022.jpg" class="img-card">
-                    <span class="legenda-imagem">Logo: Visual Studio</span>
-                    <h3>Visual Studio</h3>
-                    <ul class="lista-enredo">
-                        <li>Poderosa IDE para desenvolvimento profissional.</li>
-                        <li>Essencial para codificação moderna e debug.</li>
+                    <img src="https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Brand-Thumb-Visual-Studio-2022.jpg" alt="Visual Studio" class="thumb-image">
+                    <span class="obra-titulo">Visual Studio:</span>
+                    <ul class="info-list">
+                        <li>A principal ferramenta para desenvolvimento de softwares modernos.</li>
+                        <li>Ambiente robusto para criação de códigos em múltiplas linguagens.</li>
                     </ul>
                 </div>
 
                 <div class="item-box">
-                    <img src="https://media.contentapi.ea.com/content/dam/ea/the-sims/the-sims-4/common/ts4-rebrand-base-game-hero-large.jpg" class="img-card">
-                    <span class="legenda-imagem">Game: The Sims 4</span>
-                    <h3>The Sims 4</h3>
-                    <ul class="lista-enredo">
-                        <li>Simulador de vida interativo.</li>
-                        <li>Possibilita a criação de histórias e arquiteturas únicas.</li>
+                    <img src="https://media.contentapi.ea.com/content/dam/ea/the-sims/the-sims-4/common/ts4-rebrand-base-game-hero-large.jpg" alt="The Sims" class="thumb-image">
+                    <span class="obra-titulo">The Sims 4:</span>
+                    <ul class="info-list">
+                        <li>O simulador definitivo onde você controla a vida e a arquitetura.</li>
+                        <li>Um jogo de estratégia e criatividade sem limites.</li>
                     </ul>
                 </div>
             </section>
