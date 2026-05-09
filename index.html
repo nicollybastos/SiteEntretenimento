@@ -3,125 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portal de Entretenimento Digital</title>
-    
-    <!-- 1. Vínculo do CSS Reset (Eric Meyer) -->
+    <title>Meu Portal de Entretenimento</title>
     <link rel="stylesheet" href="reset.css">
-    
-    <!-- 2. Vínculo do CSS Externo Principal -->
-    <link rel="stylesheet" href="estilo.css">
-
-    <!-- 3. CSS INTERNO: Estilizações específicas de destaque -->
-    <style>
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        .item-box {
-            margin-top: 25px;
-            padding-top: 15px;
-            border-top: 1px solid #333;
-        }
-
-        .obra-titulo {
-            font-weight: bold;
-            color: #ffffff;
-            font-size: 1.1rem;
-            margin: 10px 0;
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
+    <header>
+        <h1>Meu Portal de Entretenimento Digital</h1>
+    </header>
+
+    <main class="container">
         
-        <!-- HEADER COM CSS INLINE: Requisito técnico de implementação -->
-        <header id="main-header" style="background: linear-gradient(to right, #00c6ff, #0072ff); padding: 40px; text-align: center; border-radius: 15px; margin-bottom: 30px;">
-            <h1 style="font-size: 3rem; color: white; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
-                Meu Portal de Entretenimento Digital
-            </h1>
-        </header>
+        <!-- COLUNA 1: FILMES E SÉRIES -->
+        <section>
+            <div class="coluna-titulo">Filmes e Séries</div>
+            
+            <div class="card">
+                <span class="item-nome">Crepúsculo</span>
+                <img src="https://images.unsplash.com/photo-1594909122845-11baa439b7bf?q=80&w=500" alt="Crepúsculo">
+                <p class="enredo">Bella Swan se muda para Forks e descobre que seu misterioso colega, Edward Cullen, é um vampiro de 104 anos.</p>
+            </div>
 
-        <!-- LAYOUT FLEXBOX: Organiza as 3 seções lado a lado -->
-        <main class="flex-layout">
+            <div class="card">
+                <span class="item-nome">Velozes e Furiosos</span>
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=500" alt="Velozes e Furiosos">
+                <p class="enredo">Um policial se infiltra no submundo das rachas de rua em Los Angeles para prender uma quadrilha de assaltantes.</p>
+            </div>
 
-            <!-- SEÇÃO 1: FILMES E SÉRIES -->
-            <section class="section-card">
-                <h2 class="section-title">Filmes e Séries</h2>
-                <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1000" alt="Cinema" class="featured-image">
-                
-                <div class="item-box">
-                    <img src="https://images.tcdn.com.br/img/img_prod/1129410/poster_cartaz_crepusculo_a_104443_1_864e43f114172f38a531636c0a0c4731.jpg" alt="Crepúsculo" class="thumb-image">
-                    <span class="obra-titulo">Crepúsculo:</span>
-                    <ul class="info-list">
-                        <li>Bella Swan se muda para Forks e conhece o misterioso Edward Cullen.</li>
-                        <li>A descoberta de que Edward é um vampiro muda sua vida para sempre.</li>
-                    </ul>
-                </div>
+            <div class="card">
+                <span class="item-nome">Marley & Eu</span>
+                <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?q=80&w=500" alt="Marley e Eu">
+                <p class="enredo">As lições de vida aprendidas por um casal e seu cachorro labrador incorrigível e hiperativo.</p>
+            </div>
+        </section>
 
-                <div class="item-box">
-                    <img src="https://br.web.img2.acsta.net/medias/nmedia/18/89/43/82/20052140.jpg" alt="Velozes" class="thumb-image">
-                    <span class="obra-titulo">Velozes e Furiosos:</span>
-                    <ul class="info-list">
-                        <li>Dominic Toretto e Brian O'Conner em um mundo de corridas ilegais.</li>
-                        <li>Foca na lealdade, adrenalina e o conceito de família.</li>
-                    </ul>
-                </div>
-            </section>
+        <!-- COLUNA 2: MÚSICA E PODCASTS -->
+        <section>
+            <div class="coluna-titulo">Música e Podcasts</div>
 
-            <!-- SEÇÃO 2: MÚSICA E PODCASTS -->
-            <section class="section-card">
-                <h2 class="section-title">Música e Podcasts</h2>
-                <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=1000" alt="DJ" class="featured-image">
+            <div class="card">
+                <span class="item-nome">Podpah</span>
+                <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=500" alt="Podpah">
+                <p class="enredo">Um dos maiores podcasts do Brasil, focado em conversas descontraídas com grandes personalidades.</p>
+            </div>
 
-                <div class="item-box">
-                    <img src="https://yt3.googleusercontent.com/ytc/AIdro_mN-uXh1pG-K5hBwOQ_1_v_5W_jYQ=s900-c-k-c0x00ffffff-no-rj" alt="Podpah" class="thumb-image">
-                    <span class="obra-titulo">Podpah:</span>
-                    <ul class="info-list">
-                        <li>O podcast líder apresentado por Igão e Mítico.</li>
-                        <li>Entrevistas icônicas com grandes nomes da cultura nacional.</li>
-                    </ul>
-                </div>
+            <div class="card">
+                <span class="item-nome">Aquarela</span>
+                <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=500" alt="Aquarela">
+                <p class="enredo">O clássico de Toquinho que narra de forma poética a construção de um mundo através da imaginação.</p>
+            </div>
 
-                <div class="item-box">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273574c8b389668d2f143717208" alt="Aquarela" class="thumb-image">
-                    <span class="obra-titulo">Aquarela:</span>
-                    <ul class="info-list">
-                        <li>Clássico de Toquinho que poetiza o ciclo da vida.</li>
-                        <li>Uma música que estimula a imaginação e a criatividade.</li>
-                    </ul>
-                </div>
-            </section>
+            <div class="card">
+                <span class="item-nome">A Sua Maneira</span>
+                <img src="https://images.unsplash.com/photo-1493225255756-d9584f8606e9?q=80&w=500" alt="Capital Inicial">
+                <p class="enredo">Um dos maiores sucessos do Capital Inicial, marcando o rock nacional dos anos 2000.</p>
+            </div>
+        </section>
 
-            <!-- SEÇÃO 3: GAMES E TECNOLOGIA -->
-            <section class="section-card">
-                <h2 class="section-title">Games e Tecnologia</h2>
-                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1000" alt="Setup" class="featured-image">
+        <!-- COLUNA 3: GAMES E TECNOLOGIA -->
+        <section>
+            <div class="coluna-titulo">Games e Tecnologia</div>
 
-                <div class="item-box">
-                    <img src="https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Brand-Thumb-Visual-Studio-2022.jpg" alt="Visual Studio" class="thumb-image">
-                    <span class="obra-titulo">Visual Studio:</span>
-                    <ul class="info-list">
-                        <li>A principal ferramenta para desenvolvimento de softwares modernos.</li>
-                        <li>Ambiente robusto para criação de códigos em múltiplas linguagens.</li>
-                    </ul>
-                </div>
+            <div class="card">
+                <span class="item-nome">Visual Studio Code</span>
+                <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=500" alt="VS Code">
+                <p class="enredo">O editor de código preferido dos desenvolvedores, leve, poderoso e altamente personalizável.</p>
+            </div>
 
-                <div class="item-box">
-                    <img src="https://media.contentapi.ea.com/content/dam/ea/the-sims/the-sims-4/common/ts4-rebrand-base-game-hero-large.jpg" alt="The Sims" class="thumb-image">
-                    <span class="obra-titulo">The Sims 4:</span>
-                    <ul class="info-list">
-                        <li>O simulador definitivo onde você controla a vida e a arquitetura.</li>
-                        <li>Um jogo de estratégia e criatividade sem limites.</li>
-                    </ul>
-                </div>
-            </section>
+            <div class="card">
+                <span class="item-nome">The Sims 4</span>
+                <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=500" alt="The Sims 4">
+                <p class="enredo">Simulador de vida onde você pode criar pessoas, construir casas e controlar o destino dos seus Sims.</p>
+            </div>
 
-        </main>
-    </div>
+            <div class="card">
+                <span class="item-nome">Call of Duty</span>
+                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=500" alt="Call of Duty">
+                <p class="enredo">Franquia de tiro em primeira pessoa focada em combates militares intensos e experiências multiplayer.</p>
+            </div>
+        </section>
+
+    </main>
 
 </body>
 </html>
