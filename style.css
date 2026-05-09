@@ -1,7 +1,7 @@
 /* CONFIGURAÇÕES GERAIS DO CORPO */
 body {
-    background-color: #121212; /* Cor de fundo escura */
-    color: #e0e0e0;           /* Cor do texto principal */
+    background-color: #121212;
+    color: #e0e0e0;
     padding: 20px;
     font-family: Arial, sans-serif;
 }
@@ -17,20 +17,20 @@ h1 {
     text-transform: uppercase;
 }
 
-/* LAYOUT FLEXBOX (REQUISITO DA AGENDA) */
+/* LAYOUT FLEXBOX */
 .container {
-    display: flex;             /* Habilita o Flexbox */
-    flex-wrap: wrap;           /* Permite que as colunas desçam em telas pequenas */
-    justify-content: center;   /* Centraliza o conteúdo */
-    gap: 20px;                 /* Espaçamento entre as colunas */
+    display: flex;           
+    flex-wrap: wrap;          
+    justify-content: center;  
+    gap: 20px;              
     max-width: 1300px;
     margin: 0 auto;
 }
 
 /* ESTILO DAS SEÇÕES (COLUNAS) */
 section {
-    flex: 1;                   /* Faz as colunas crescerem por igual */
-    min-width: 320px;          /* Define uma largura mínima para responsividade */
+    flex: 1;                 
+    min-width: 320px;         
     margin-bottom: 20px;
 }
 
@@ -53,11 +53,11 @@ section {
 /* FORMATAÇÃO DAS IMAGENS */
 .card img {
     width: 100%;
-    height: 300px;             /* Altura padronizada */
-    object-fit: cover;         /* Corta a imagem sem distorcer */
-    border-radius: 12px;       /* Bordas arredondadas */
+    height: 300px;        
+    object-fit: cover;       
+    border-radius: 12px;     
     margin-bottom: 12px;
-    transition: 0.3s;          /* Transição suave para o efeito de hover */
+    transition: 0.3s;         
 }
 
 /* EFEITO AO PASSAR O MOUSE NA IMAGEM */
@@ -69,7 +69,7 @@ section {
 /* ESTILO DOS NOMES DOS ITENS (CLASSES) */
 .item-nome {
     font-size: 1.1rem;
-    color: #00d4ff;            /* Cor azul neon */
+    color: #00d4ff;         
     margin-bottom: 8px;
     display: block;
     font-weight: bold;
@@ -83,7 +83,7 @@ section {
     text-align: justify;
 }
 
-/* USO DE ID PARA ESTILIZAÇÃO ESPECÍFICA (REQUISITO) */
+/* USO DE ID PARA ESTILIZAÇÃO ESPECÍFICA */
 #games-tecnologia {
     border-top: 3px solid #00d4ff;
 }
