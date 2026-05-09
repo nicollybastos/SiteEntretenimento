@@ -4,19 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portal de Entretenimento</title>
+    <!-- Vinculação dos arquivos externos -->
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+
+    <!-- REQUISITO: CSS INTERNO -->
+    <style>
+        .coluna-titulo {
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        section {
+            border: 1px solid #222;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #1a1a1a;
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <h1>Meu Portal de Entretenimento Digital</h1>
+        <!-- REQUISITO: CSS INLINE -->
+        <h1 style="color: #00d4ff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+            Meu Portal de Entretenimento Digital
+        </h1>
     </header>
 
     <main class="container">
         
         <!-- COLUNA 1: FILMES E SÉRIES -->
-        <section>
+        <section id="filmes-series">
             <div class="coluna-titulo">Filmes e Séries</div>
             
             <div class="card">
@@ -39,7 +58,7 @@
         </section>
 
         <!-- COLUNA 2: MÚSICA E PODCASTS -->
-        <section>
+        <section id="musica-podcasts">
             <div class="coluna-titulo">Música e Podcasts</div>
 
             <div class="card">
@@ -56,13 +75,13 @@
 
             <div class="card">
                 <span class="item-nome">A Sua Maneira</span>
-                <img src="asuamaneira.jpeg" alt="Capa do álbum Capital Inicial - Rosas e Vinho Tinto">
+                <img src="asuamaneira.jpeg" alt="Capa do álbum Capital Inicial">
                 <p class="enredo">Um dos maiores sucessos do Capital Inicial, marcando o rock nacional dos anos 2000.</p>
             </div>
         </section>
 
         <!-- COLUNA 3: GAMES E TECNOLOGIA -->
-        <section>
+        <section id="games-tecnologia">
             <div class="coluna-titulo">Games e Tecnologia</div>
 
             <div class="card">
