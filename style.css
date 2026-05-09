@@ -1,0 +1,59 @@
+/* Definição de fontes e cores globais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    padding: 20px;
+}
+
+/* Container Principal usando Flexbox para colocar as seções lado a lado */
+#main-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Classe para padronizar as seções */
+.card-section {
+    flex: 1;
+    min-width: 300px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+/* Estilo padronizado para os títulos via Classe */
+.section-title {
+    color: #00d4ff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Padronização das fontes das imagens */
+.display-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    filter: grayscale(30%);
+    transition: 0.3s;
+}
+
+.display-image:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+}
+
+/* Estilo dos parágrafos */
+p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #ccc;
+    margin-bottom: 15px;
+}
